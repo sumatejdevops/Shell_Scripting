@@ -8,4 +8,4 @@ echo "SUM is: ${SUM}"
 
 Names=("Sumatej", "Ravitej", "Sunku")
 echo "All Leaders: ${Names[@]}"
-echo "First Leader: ${Names[2]}"
+echo "First Leader: ${Names[0]}"
