@@ -3,14 +3,15 @@
 USER_ID=$(id -u)
 
 if [ $USER_ID -ne 0 ]; then
-    echo "Please run the script with root privelege"
+    echo "Error:: Please run the script with root privelege"
+    exit 1
 fi
 
-date
+dnf install mysql -y
 
 if [ $? -ne 0 ]; then
-    echo "Error"
-
+    echo "Error MySQL installation failed"
+    exit 1
 else
-    echo "Today's Date is : $date"
+    echo "mysql has been installed successfully"
 fi
