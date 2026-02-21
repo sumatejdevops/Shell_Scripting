@@ -6,5 +6,6 @@ Name=Sumatej
 SUM=$(($Number1+$Number2))
 echo "SUM is: ${SUM}"
 
-Leaders=("S", "B","S")
+Leaders=("S", "B", "S")
 echo "All Leaders: ${Leaders[@]}"
+echo "First Leader: ${Leaders[3]}"
