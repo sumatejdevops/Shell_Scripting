@@ -1,9 +1,11 @@
 #!/bin/bash
 
 USER_ID=$(id -u)
+
 echo "$USER_ID"
+
 if [ $USER_ID -ne 0 ]; then
-    echo "Error:: Please run the script with root privelege"
+    echo "Error:: Please run the script with root privelege because this user is not a root user!!"
     exit 1
 fi
 
