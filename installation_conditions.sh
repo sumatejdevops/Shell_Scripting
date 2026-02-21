@@ -27,4 +27,6 @@ VALIDATE $? "Ngnix"
 dnf install python -y
 VALIDATE $? "Python"
 
+#dnf list imstalled mysql
+#echo $?
 
